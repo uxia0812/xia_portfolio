@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <section>
       <div className="grid grid-cols-1 lg:grid-cols-12">
-        <div className="col-span-7">
+        <div className="col-span-7 place-self-center">
           <h1 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold">
             {"Hello, I'm Ujeong"}
             {/* 작은따옴표로 에러 발생해서 {""} 사이에 문자열 입력 */}
