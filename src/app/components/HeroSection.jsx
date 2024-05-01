@@ -15,6 +15,10 @@ const HeroSection = () => {
             expertise with a keen eye for design to create impactful web
             solutions.
           </p>
+          <div>
+            <button className="px-6 py-2.5 rounded-full mr-4 bg-white hover:bg-slate-200 text-black">Hire Me</button>
+            <button className="px-6 py-2.5 rounded-full mr-4 bg-transparent hover:bg-slate-800 text-white border border-white mt-2">Download CV</button>
+          </div>
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
           <div className="rounded-full bg-[#181818] w-[400px] h-[300px] lg:w-[400px] lg:h-[300px] relative">
