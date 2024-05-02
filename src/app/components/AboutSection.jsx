@@ -4,6 +4,42 @@ import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 
+const TAB_DATA = [
+  {
+    title : "Skills",
+    id : "skills",
+    content: (
+      <ul>
+        <li>Java</li>
+        <li>Spring</li>
+        <li>JavaScript</li>
+        <li>Next.js</li>
+        <li>MySQL</li>
+      </ul>
+    )
+  },
+  {
+    title : "Education",
+    id : "education",
+    content: (
+      <ul>
+        <li>{"1Z Lab's Dev Camp"}</li>
+        <li>Multi-It Java Camp</li>
+      </ul>
+    )
+  },
+  {
+    title : "Experience",
+    id : "experience",
+    content: (
+      <ul>
+        <li>{"Software Engineer Intern at 1Z Lab's"}</li>
+        <li>Designer Intern at SJAD</li>
+      </ul>
+    )
+  },
+]
+
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
@@ -56,6 +92,7 @@ const AboutSection = () => {
               Experience{" "}
             </TabButton>
           </div>
+          <div className="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>
         </div>
       </div>
     </section>
