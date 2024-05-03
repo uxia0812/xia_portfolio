@@ -11,8 +11,8 @@ const ProjectData = [
     description: "Project 1 description",
     image: "/images/projects/portfolio_page.png",
     tag: ["All", "Front"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/uxia99/xia_portfolio.git",
+    previewUrl: "https://xia-portfolio-psi.vercel.app/",
   },
   {
     id: 2,
@@ -20,8 +20,8 @@ const ProjectData = [
     description: "Project 3 description",
     image: "/images/projects/note_ai_chat.png",
     tag: ["All", "Back"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/uxia99/nextjs-ai-note-app.git",
+    previewUrl: "https://nextjs-ai-note-app-ten.vercel.app/",
   },
   {
     id: 3,
@@ -29,8 +29,8 @@ const ProjectData = [
     description: "Project 2 description",
     image: "/images/projects/survey_app.png",
     tag: ["All", "Back"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/uxia99/survey-app.git",
+    previewUrl: "https://survey-app-jade.vercel.app/",
   },
   {
     id: 4,
@@ -38,8 +38,8 @@ const ProjectData = [
     description: "Project 5 description",
     image: "/images/projects/car_info.png",
     tag: ["All", "Back"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/uxia99/car_project.git",
+    previewUrl: "https://www.youtube.com/watch?v=opB9qCTnqSU",
   },
   {
     id: 5,
@@ -47,8 +47,8 @@ const ProjectData = [
     description: "Project 4 description",
     image: "/images/projects/multi_it_project.png",
     tag: ["All", "Back"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/jeonjin616/Expo_wave",
+    previewUrl: "https://www.youtube.com/watch?v=opB9qCTnqSU",
   },
   {
     id: 6,
@@ -56,8 +56,8 @@ const ProjectData = [
     description: "Project 6 description",
     image: "/images/projects/my_ai_chat.png",
     tag: ["All", "Back"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/uxia99/my-chat-gpt.git",
+    previewUrl: "https://my-chat-gpt-bice-phi.vercel.app/",
   },
   {
     id: 7,
@@ -66,7 +66,7 @@ const ProjectData = [
     image: "/images/projects/kahlua_page.png",
     tag: ["All", "Front"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "https://www.youtube.com/watch?v=opB9qCTnqSU",
   },
   {
     id: 8,
@@ -74,8 +74,8 @@ const ProjectData = [
     description: "Project 7 description",
     image: "/images/projects/todo_list.png",
     tag: ["All", "Front"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/uxia99/todo-list-crud.git",
+    previewUrl: "https://todo-list-crud-pi.vercel.app/",
   },
 ];
 
