@@ -79,7 +79,13 @@ const ProjectData = [
 const ProjectsSection = () => {
   return (
     <div>
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8">My Projects</h2>
+      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8">
+        My Projects
+      </h2>
+      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+        <button className="rounded-full border-2 border-purple-500 px-5 py-2 text-xl cursor-pointer">All</button>
+        <button className="rounded-full border-2 border-slate-600 hover:border-white px-5 py-2 text-xl cursor-pointer">Web</button>
+      </div>
       <div className="grid md:grid-cols-2 gap-6 md:gap-8">
         {ProjectData.map((project) => (
           <ProjectCard
