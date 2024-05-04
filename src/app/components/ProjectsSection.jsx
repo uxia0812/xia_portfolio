@@ -91,7 +91,7 @@ const ProjectsSection = () => {
   );
 
   return (
-    <div>
+    <div className="mt-7">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8">
         My Projects
       </h2>
