@@ -6,11 +6,11 @@ import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   return (
-    <section>
+    <section className="lg:py-12">
       <div className="grid grid-cols-1 sm:grid-cols-12">
-        <div className="col-span-7 place-self-center text-center sm:text-left">
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+        <div className="col-span-8 place-self-center text-center sm:text-left justify-self-start">
+          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
               {"Hello, I'm"}
               {""}
               {/* 작은따옴표로 에러 발생해서 {""} 사이에 문자열 입력 */}
@@ -44,7 +44,7 @@ const HeroSection = () => {
             </button>
           </div>
         </div>
-        <div className="col-span-5 place-self-center mt-4 lg:mt-0">
+        <div className="col-span-4 place-self-center mt-4 lg:mt-0">
           <div className="rounded-full bg-[#181818] w-[400px] h-[300px] lg:w-[400px] lg:h-[300px] relative">
             <Image
               src="/images/mac_xia.png"
