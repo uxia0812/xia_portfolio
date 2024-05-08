@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import GithubIcon from "../../../public/github_icon.svg";
 import LinkedinIcon from "../../../public/linkedin_icon.svg";
+import NotionIcon from "../../../public/notion_icon.svg";
+import BlogIcon from "../../../public/blog_icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -54,11 +56,17 @@ const EmailSection = () => {
           {"I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!"}
         </p>
         <div className="socials flex flex-row gap-2 mt-3">
-          <Link href="github.com" className="mr-2">
+          <Link href="https://github.com/uxia99" target="_blank" className="mr-2">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="linkedin.com" className="ml-2">
+          <Link href="https://www.linkedin.com/in/youjeong-jang-6bb368214/" target="_blank" className="ml-2 mr-2">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
+          </Link>
+          <Link href="https://www.notion.so/Backend-TIL-Noted-52aad819f3844724929870e35708b7ee?pvs=4" target="_blank" className="mt-0.5 ml-2 mr-2">
+            <Image src={NotionIcon} alt="Notion Icon" />
+          </Link>
+          <Link href="https://xia-it.tistory.com/" target="_blank" className="mt-1 ml-2">
+            <Image src={BlogIcon} alt="Blog Icon" />
           </Link>
         </div>
       </div>
