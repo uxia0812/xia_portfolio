@@ -40,6 +40,7 @@ const EmailSection = () => {
     if (response.status === 200) {
       console.log("Message sent successfully");
       setEmailSubmitted(true);
+      setTimeout(() => setEmailSubmitted(false), 5000); // 5초 후 메시지 숨김
     }
   };
 
