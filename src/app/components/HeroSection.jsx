@@ -30,7 +30,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            As a passionate Full-Stack Developer, I blend deep technical
+            As a passionate Software Developer, I blend deep technical
             expertise with a keen eye for design to create impactful web
             solutions.
           </p>
