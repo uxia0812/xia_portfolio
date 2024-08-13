@@ -17,42 +17,34 @@ const ProjectData = [
   },
   {
     id: 2,
-    title: "MBTI AI ChatBot Website",
+    title: "Snake Breeding Management App",
     description: "AI Chat with response prompts of MBTI T and F",
-    image: "/images/projects/mbti_chatbot.png",
+    image: "/images/projects/snake_breeding.png",
     tag: ["All", "Side Project"],
-    gitUrl: "https://github.com/uxia99/my-chat-gpt.git",
-    previewUrl: "https://mbti-bot.vercel.app/",
+    gitUrl: "https://github.com/uxia99/Snake_Breeding.git",
+    previewUrl: "",
   },
   {
     id: 3,
+    title: "NewsMetrics Dashboard",
+    description: "CRUD-enabled Vehicle Information website",
+    image: "/images/projects/fastview.png",
+    tag: ["All", "Work Project"],
+    gitUrl: "",
+    previewUrl: "",
+    
+  },
+  {
+    id: 4,
     title: "Note + AI Chat Website",
     description: "Web site with Note and AI Chat",
     image: "/images/projects/note_ai_chat.png",
     tag: ["All", "Side Project"],
-    gitUrl: "https://github.com/uxia99/nextjs-ai-note-app.git",
-    previewUrl: "https://nextjs-ai-note-app-ten.vercel.app/",
-  },
-  {
-    id: 4,
-    title: "Car Info Website",
-    description: "CRUD-enabled Vehicle Information website",
-    image: "/images/projects/car_info.png",
-    tag: ["All", "Side Project"],
-    gitUrl: "https://github.com/uxia99/car_project.git",
-    previewUrl: "https://www.youtube.com/watch?v=opB9qCTnqSU",
+    gitUrl: "",
+    previewUrl: "",
   },
   {
     id: 5,
-    title: "Exhibition Website",
-    description: "Website with Event Information and Community",
-    image: "/images/projects/multi_it_project.png",
-    tag: ["All", "Side Project"],
-    gitUrl: "https://github.com/jeonjin616/Expo_wave",
-    previewUrl: "https://www.youtube.com/watch?v=opB9qCTnqSU",
-  },
-  {
-    id: 6,
     title: "Survey App",
     description: "Survey Form with CRUD function",
     image: "/images/projects/survey_app.png",
@@ -61,22 +53,31 @@ const ProjectData = [
     previewUrl: "https://survey-app-jade.vercel.app/",
   },
   {
-    id: 7,
-    title: "Kahlua Menu Website",
-    description: "Favorite regular Bar's menu website",
-    image: "/images/projects/kahlua_page.png",
+    id: 6,
+    title: "Exhibition Website",
+    description: "Website with Event Information and Community",
+    image: "/images/projects/multi_it_project.png",
     tag: ["All", "Side Project"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/jeonjin616/Expo_wave",
     previewUrl: "https://www.youtube.com/watch?v=opB9qCTnqSU",
   },
   {
-    id: 8,
+    id: 7,
     title: "Todo List Website",
     description: "Todo List with CRUD function",
     image: "/images/projects/todo_list.png",
     tag: ["All", "Side Project"],
     gitUrl: "https://github.com/uxia99/todo-list-crud.git",
     previewUrl: "https://todo-list-crud-pi.vercel.app/",
+  },
+  {
+    id: 8,
+    title: "Data Processing",
+    description: "Data Processing with Python for AI",
+    image: "/images/projects/solomon_ai.png",
+    tag: ["All", "Work Project"],
+    gitUrl: "",
+    previewUrl: "",
   },
 ];
 
@@ -116,8 +117,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Professional Project"
-          isSelected={tag === "Professional Project"}
+          name="Work Project"
+          isSelected={tag === "Work Project"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-2 gap-6 md:gap-8">
