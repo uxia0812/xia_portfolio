@@ -30,9 +30,8 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            As a passionate Software Developer, I blend deep technical
-            expertise with a keen eye for design to create impactful web
-            solutions.
+            "배움에 고파하라. 성장하지 않으면 퇴보한다."<br />
+            빠른 습득력과 응용력, 지속적인 학습과 끈기로 빠르게 성장하는 신입 개발자입니다.
           </p>
           <div>
             <a href="https://open.kakao.com/o/s72Dtwqg" target="_blank">
