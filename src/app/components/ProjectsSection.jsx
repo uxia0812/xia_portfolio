@@ -11,73 +11,54 @@ const ProjectData = [
     title: "React Portfolio Website",
     description: "My Portfolio Website with Next.js",
     image: "/images/projects/portfolio_page.png",
-    tag: ["All", "Side Project"],
+    tag: ["All", "Dev Project"],
     gitUrl: "https://github.com/uxia99/xia_portfolio.git",
     previewUrl: "https://xia-portfolio-psi.vercel.app/",
   },
   {
     id: 2,
-    title: "Snake Breeding Management App",
-    description: "AI Chat with response prompts of MBTI T and F",
-    image: "/images/projects/snake_breeding.png",
-    tag: ["All", "Side Project"],
-    gitUrl: "https://github.com/uxia99/Snake_Breeding.git",
-    previewUrl: "",
+    title: "Prettying Hospital Info Website",
+    description: "SEO-optimized website",
+    image: "/images/projects/prettying_web.png",
+    tag: ["All", "PM Project", "Dev Project"],
+    gitUrl: "https://github.com/uxia0812/web_hospital_info",
+    previewUrl: "https://prettyingweb.vercel.app/",
   },
   {
     id: 3,
-    title: "NewsMetrics Dashboard",
-    description: "CRUD-enabled Vehicle Information website",
-    image: "/images/projects/fastview.png",
-    tag: ["All", "Work Project"],
-    gitUrl: "",
-    previewUrl: "",
-    
+    title: "Hospital Info Page",
+    description: "Admin dashboard for managing partner clinics",
+    image: "/images/projects/hospital_info.png",
+    tag: ["All", "PM Project", "Dev Project"],
+    gitUrl: "https://github.com/uxia0812/hospital_list.git",
+    previewUrl: "https://hospital-list.vercel.app/",
   },
   {
     id: 4,
     title: "Data Processing",
     description: "Data Processing with Python for AI",
     image: "/images/projects/solomon_ai.png",
-    tag: ["All", "Work Project"],
+    tag: ["All", "Dev Project"],
     gitUrl: "",
     previewUrl: "",
   },
   {
-    id: 5,
+    id: 4,
     title: "Survey App",
     description: "Survey Form with CRUD function",
     image: "/images/projects/survey_app.png",
-    tag: ["All", "Side Project"],
+    tag: ["All", "Dev Project"],
     gitUrl: "https://github.com/uxia99/survey-app.git",
     previewUrl: "https://survey-app-jade.vercel.app/",
   },
   {
-    id: 6,
-    title: "Exhibition Website",
-    description: "Website with Event Information and Community",
-    image: "/images/projects/multi_it_project.png",
-    tag: ["All", "Side Project"],
-    gitUrl: "https://github.com/jeonjin616/Expo_wave",
-    previewUrl: "https://www.youtube.com/watch?v=opB9qCTnqSU",
-  },
-  {
-    id: 7,
+    id: 5,
     title: "Todo List Website",
     description: "Todo List with CRUD function",
     image: "/images/projects/todo_list.png",
-    tag: ["All", "Side Project"],
+    tag: ["All", "Dev Project"],
     gitUrl: "https://github.com/uxia99/todo-list-crud.git",
     previewUrl: "https://todo-list-crud-pi.vercel.app/",
-  },
-  {
-    id: 8,
-    title: "Note + AI Chat Website",
-    description: "Web site with Note and AI Chat",
-    image: "/images/projects/note_ai_chat.png",
-    tag: ["All", "Side Project"],
-    gitUrl: "",
-    previewUrl: "",
   },
 ];
 
@@ -101,7 +82,7 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects" className="mt-7">
-      <h2 className="text-center text-4xl font-bold text-white mt-11 mb-8">
+      <h2 className="text-center text-4xl font-bold text-white pt-11 mt-11 mb-8">
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
@@ -112,12 +93,12 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Side Project"
+          name="PM Project"
           isSelected={tag === "Side Project"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Work Project"
+          name="Dev Project"
           isSelected={tag === "Work Project"}
         />
       </div>

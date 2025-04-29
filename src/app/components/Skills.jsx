@@ -59,7 +59,7 @@ const Skills = () => {
   return (
     <section ref={sectionRef} id="skills" className="relative ml-11 pl-11 mr-11 pr-11 mb-11 pb-11">
       {/* PM 배경 이미지 */}
-      <div className="absolute top-1/4 left-1/2 transform -translate-x-1/4 pointer-events-none z-0">
+      <div className="absolute top-1/4 left-1/2 transform -translate-x-1/4 opacity-80 pointer-events-none z-0">
         <Image
           src="/images/PM.png"
           alt="PM Background"
@@ -71,7 +71,7 @@ const Skills = () => {
       </div>
       
       {/* Dev 배경 이미지 */}
-      <div className="absolute bottom-20 right-0 pointer-events-none z-0">
+      <div className="absolute bottom-20 right-0 opacity-80 pointer-events-none z-0">
         <Image
           src="/images/Dev.png"
           alt="Dev Background"
@@ -82,11 +82,11 @@ const Skills = () => {
         />
       </div>
 
-      <h2 className="text-4xl font-bold text-white mb-8 relative z-10">
+      <h2 className="text-4xl font-bold text-white mb-8 relative z-0">
         Skill Set
       </h2>
 
-      <div className="relative z-10 space-y-5">
+      <div className="relative z-0 space-y-5">
         {skillCategories.map((category, index) => (
           <div
             key={category.id}
