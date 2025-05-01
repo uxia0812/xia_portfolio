@@ -31,16 +31,16 @@ const Career = () => {
   }, []);
 
   return (
-    <section id="career" className="relative ml-11 pl-11 mr-11 pr-11 mt-11 mb-11 pb-11">
-      <div className="relative ml-11 pl-11 mr-11 pr-11">
-        <h2 className="text-right text-4xl font-bold text-white mt-11 -mb-7">
+    <section id="career" className="relative ml-11 pl-11 mr-11 pr-11 mt-11 mb-11 pb-11 sm:ml-4 sm:pl-4 sm:mr-4 sm:pr-4">
+      <div className="relative ml-11 pl-11 mr-11 pr-11 sm:ml-4 sm:pl-4 sm:mr-4 sm:pr-4">
+        <h2 className="text-right text-4xl font-bold text-white mt-11 -mb-7 sm:text-3xl">
           Career
         </h2>
         
-        <div ref={sectionRef} className="relative mt-16 flex items-center">
+        <div ref={sectionRef} className="relative mt-16 flex items-center justify-center">
           {/* 연도 이미지 - 좌측에서 우측으로 이동하며 나타남 */}
           <motion.div 
-            className="mr-11"
+            className="mr-11 sm:mr-4"
             style={{ width: '70px', height: '417px' }}
             initial={{ x: -50, opacity: 0 }}
             animate={isVisible ? { x: 0, opacity: 1 } : { x: -50, opacity: 0 }}
@@ -58,7 +58,7 @@ const Career = () => {
           </motion.div>
 
           {/* 원형 이미지들 - 고정된 위치 */}
-          <div className="relative ml-10 -mr-11" style={{ width: '50px', height: '410px' }}>  {/* 높이 450px로 조정, 비율 유지 */}
+          <div className="relative ml-10 -mr-11 sm:ml-4 sm:-mr-4" style={{ width: '50px', height: '410px' }}>
             <div style={{ position: 'relative', width: '100%', height: '100%' }}>
               <Image 
                 src="/images/circle.png"
@@ -72,7 +72,7 @@ const Career = () => {
 
           {/* 설명 이미지 - 우측에서 좌측으로 이동하며 나타남 */}
           <motion.div 
-            className="mt-9 -ml-11"
+            className="mt-9 -ml-11 sm:-ml-4"
             style={{ width: '750px', height: '450px' }}
             initial={{ x: 50, opacity: 0 }}
             animate={isVisible ? { x: 0, opacity: 1 } : { x: 50, opacity: 0 }}

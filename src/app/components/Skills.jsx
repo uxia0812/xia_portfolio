@@ -57,36 +57,36 @@ const Skills = () => {
   ];
 
   return (
-    <section ref={sectionRef} id="skills" className="relative ml-11 pl-11 mr-11 pr-11 mb-11 pb-11">
+    <section ref={sectionRef} id="skills" className="relative ml-11 pl-11 mr-11 pr-11 mb-11 pb-11 sm:ml-4 sm:pl-4 sm:mr-4 sm:pr-4">
       {/* PM 배경 이미지 */}
-      <div className="absolute top-1/4 left-1/2 transform -translate-x-1/4 opacity-80 pointer-events-none z-0">
+      <div className="absolute top-1/4 left-1/2 transform -translate-x-1/4 opacity-80 pointer-events-none z-0 sm:top-1/3">
         <Image
           src="/images/PM.png"
           alt="PM Background"
           width={330}
           height={170}
-          className="w-[330px] h-auto object-contain"
+          className="h-[170px] md:w-[330px] sm:h-[120px] w-auto object-contain"
           style={{ maxWidth: '330px' }}
         />
       </div>
       
       {/* Dev 배경 이미지 */}
-      <div className="absolute bottom-20 right-0 opacity-80 pointer-events-none z-0">
+      <div className="absolute bottom-20 right-0 opacity-80 pointer-events-none z-0 sm:bottom-10">
         <Image
           src="/images/Dev.png"
           alt="Dev Background"
           width={400}
           height={200}
-          className="w-[400px] h-auto object-contain"
+          className="h-[200px] md:w-[400px] sm:h-[150px] w-auto object-contain"
           style={{ maxWidth: '400px' }}
         />
       </div>
 
-      <h2 className="text-4xl font-bold text-white mb-8 relative z-0">
+      <h2 className="text-4xl font-bold text-white mb-8 relative z-0 sm:text-3xl">
         Skill Set
       </h2>
 
-      <div className="relative z-0 space-y-5">
+      <div className="relative z-0 space-y-5 sm:space-y-4">
         {skillCategories.map((category, index) => (
           <div
             key={category.id}
@@ -101,7 +101,7 @@ const Skills = () => {
               <img 
                 src={category.imgSrc}
                 alt={category.alt}
-                className="h-[130px]"
+                className="h-[90px] md:h-[130px] w-auto object-contain"
               />
             </div>
           </div>
