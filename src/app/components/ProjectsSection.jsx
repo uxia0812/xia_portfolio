@@ -26,6 +26,15 @@ const ProjectData = [
   },
   {
     id: 3,
+    title: "Prettying App",
+    description: "Global Aesthetic Information Platform",
+    image: "/images/projects/prettying.png",
+    tag: ["All", "PM Project"],
+    gitUrl: "https://www.figma.com/design/pzHnY2KBgokhRBDjQk0dCh/Prettying-%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84?node-id=1309-58054&t=yLI9FG55g6lpntbq-4",
+    previewUrl: "https://www.prettying.me/",
+  },
+  {
+    id: 4,
     title: "Hospital Info Page",
     description: "Admin dashboard for managing partner clinics",
     image: "/images/projects/hospital_info.png",
@@ -34,7 +43,7 @@ const ProjectData = [
     previewUrl: "https://hospital-list.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Data Processing",
     description: "Data Processing with Python for AI",
     image: "/images/projects/solomon_ai.png",
@@ -43,23 +52,14 @@ const ProjectData = [
     previewUrl: "",
   },
   {
-    id: 4,
+    id: 6,
     title: "Survey App",
     description: "Survey Form with CRUD function",
     image: "/images/projects/survey_app.png",
     tag: ["All", "Dev Project"],
     gitUrl: "https://github.com/uxia99/survey-app.git",
     previewUrl: "https://survey-app-jade.vercel.app/",
-  },
-  {
-    id: 5,
-    title: "Todo List Website",
-    description: "Todo List with CRUD function",
-    image: "/images/projects/todo_list.png",
-    tag: ["All", "Dev Project"],
-    gitUrl: "https://github.com/uxia99/todo-list-crud.git",
-    previewUrl: "https://todo-list-crud-pi.vercel.app/",
-  },
+  }
 ];
 
 const ProjectsSection = () => {
@@ -94,12 +94,12 @@ const ProjectsSection = () => {
         <ProjectTag
           onClick={handleTagChange}
           name="PM Project"
-          isSelected={tag === "Side Project"}
+          isSelected={tag === "PM Project"}
         />
         <ProjectTag
           onClick={handleTagChange}
           name="Dev Project"
-          isSelected={tag === "Work Project"}
+          isSelected={tag === "Dev Project"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-2 gap-6 md:gap-8">
