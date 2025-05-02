@@ -57,36 +57,38 @@ const Skills = () => {
   ];
 
   return (
-    <section ref={sectionRef} id="skills" className="relative ml-11 pl-11 mr-11 pr-11 mb-11 pb-11 sm:ml-4 sm:pl-4 sm:mr-4 sm:pr-4">
+    <section 
+      ref={sectionRef} 
+      id="skills" 
+      className="relative w-full px-0 sm:px-0 md:px-0 lg:px-0 xl:px-0 2xl:px-0 pb-16 sm:pb-12"
+    >
       {/* PM 배경 이미지 */}
-      <div className="absolute top-1/4 left-1/2 transform -translate-x-1/4 opacity-80 pointer-events-none z-0 sm:top-1/3">
+      <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 sm:-translate-x-1/4 opacity-80 pointer-events-none z-0 sm:top-1/5 transition-all duration-300">
         <Image
           src="/images/PM.png"
           alt="PM Background"
           width={330}
           height={170}
-          className="h-[170px] md:w-[330px] sm:h-[120px] w-auto object-contain"
-          style={{ maxWidth: '330px' }}
+          className="h-[180px] w-auto object-contain transition-all duration-300"
         />
       </div>
       
       {/* Dev 배경 이미지 */}
-      <div className="absolute bottom-20 right-0 opacity-80 pointer-events-none z-0 sm:bottom-10">
+      <div className="absolute bottom-10 sm:bottom-16 md:bottom-20 right-0 opacity-80 pointer-events-none z-0 transition-all duration-300">
         <Image
           src="/images/Dev.png"
           alt="Dev Background"
-          width={400}
-          height={200}
-          className="h-[200px] md:w-[400px] sm:h-[150px] w-auto object-contain"
-          style={{ maxWidth: '400px' }}
+          width={350}
+          height={150}
+          className="h-[170px] w-auto object-contain transition-all duration-300"
         />
       </div>
 
-      <h2 className="text-4xl font-bold text-white mb-8 relative z-0 sm:text-3xl">
+      <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-6 md:mb-8 relative z-0 transition-all duration-300">
         Skill Set
       </h2>
 
-      <div className="relative z-0 space-y-5 sm:space-y-4">
+      <div className="relative z-0 space-y-3 sm:space-y-4 md:space-y-5 transition-all duration-300">
         {skillCategories.map((category, index) => (
           <div
             key={category.id}
@@ -97,11 +99,12 @@ const Skills = () => {
             }`}
             style={{ transitionDelay: `${category.delay}ms` }}
           >
-            <div className="flex justify-start">
+            <div className="flex justify-start items-start">
               <img 
                 src={category.imgSrc}
                 alt={category.alt}
-                className="h-[90px] md:h-[130px] w-auto object-contain"
+                className="h-[90px] sm:h-[110px] md:h-[130px] lg:h-[150px] w-auto"
+                style={{ objectFit: "contain", objectPosition: "left center" }}
               />
             </div>
           </div>
