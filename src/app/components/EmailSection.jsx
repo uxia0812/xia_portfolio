@@ -59,10 +59,10 @@ const EmailSection = () => {
           {"I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!"}
         </p>
         <div className="socials flex flex-row gap-2 mt-3">
-          <Link href="https://github.com/uxia99" target="_blank" className="mr-2">
+          <Link href="https://github.com/uxia0812" target="_blank" className="mr-2">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="https://www.linkedin.com/in/youjeong-jang-6bb368214/" target="_blank" className="ml-2 mr-2">
+          <Link href="https://profile.rememberapp.co.kr/" target="_blank" className="ml-2 mr-2">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
           <Link href="https://www.notion.so/Backend-TIL-Noted-52aad819f3844724929870e35708b7ee?pvs=4" target="_blank" className="mt-0.5 ml-2 mr-2">
