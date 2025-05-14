@@ -53,12 +53,12 @@ const ProjectData = [
   },
   {
     id: 6,
-    title: "Survey App",
-    description: "Survey Form with CRUD function",
-    image: "/images/projects/survey_app.png",
+    title: "MBTI Bot",
+    description: "A simple web-based counseling bot that provides personalized advice based on MBTI types.n",
+    image: "/images/projects/mbti-bot.png",
     tag: ["All", "Dev Project"],
     gitUrl: "https://github.com/uxia99/survey-app.git",
-    previewUrl: "https://survey-app-jade.vercel.app/",
+    previewUrl: "https://mbti-bot.vercel.app/",
   }
 ];
 
