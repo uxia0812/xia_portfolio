@@ -62,7 +62,7 @@ const EmailSection = () => {
           <Link href="https://github.com/uxia0812" target="_blank" className="mr-2">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="www.linkedin.com/in/youjeong-jang-6bb368214" target="_blank" className="ml-2 mr-2">
+          <Link href="https://www.linkedin.com/in/youjeong-jang-6bb368214/" target="_blank" className="ml-2 mr-2">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
           <Link href="https://www.notion.so/Backend-TIL-Noted-52aad819f3844724929870e35708b7ee?pvs=4" target="_blank" className="mt-0.5 ml-2 mr-2">
