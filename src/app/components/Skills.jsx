@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import "../styles/Skills.css";
 
 const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -57,54 +58,41 @@ const Skills = () => {
   ];
 
   return (
-    <section 
-      ref={sectionRef} 
-      id="skills" 
-      className="relative w-full px-0 sm:px-0 md:px-0 lg:px-0 xl:px-0 2xl:px-0 pb-16 sm:pb-12"
-    >
-      {/* PM 배경 이미지 */}
-      <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 sm:-translate-x-1/4 opacity-80 pointer-events-none z-0 sm:top-1/5 transition-all duration-300">
+    <section ref={sectionRef} id="skills" className="skills-section">
+      <div className="pm-background">
         <Image
           src="/images/PM.png"
           alt="PM Background"
           width={330}
           height={170}
-          className="h-[180px] w-auto object-contain transition-all duration-300"
+          className="h-[180px] w-auto object-contain"
         />
       </div>
       
-      {/* Dev 배경 이미지 */}
-      <div className="absolute bottom-10 sm:bottom-16 md:bottom-20 right-0 opacity-80 pointer-events-none z-0 transition-all duration-300">
+      <div className="dev-background">
         <Image
           src="/images/Dev.png"
           alt="Dev Background"
           width={350}
           height={150}
-          className="h-[170px] w-auto object-contain transition-all duration-300"
+          className="h-[170px] w-auto object-contain"
         />
       </div>
 
-      <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-6 md:mb-8 relative z-0 transition-all duration-300">
-        Skill Set
-      </h2>
+      <h2 className="skills-title">Skill Set</h2>
 
-      <div className="relative z-0 space-y-3 sm:space-y-4 md:space-y-5 transition-all duration-300">
-        {skillCategories.map((category, index) => (
+      <div className="skills-container">
+        {skillCategories.map((category) => (
           <div
             key={category.id}
-            className={`transform transition-all duration-1000 ease-out ${
-              isVisible
-                ? "translate-y-0 opacity-100"
-                : "translate-y-32 opacity-0"
-            }`}
+            className={`skill-item ${isVisible ? 'visible' : ''}`}
             style={{ transitionDelay: `${category.delay}ms` }}
           >
             <div className="flex justify-start items-start">
               <img 
                 src={category.imgSrc}
                 alt={category.alt}
-                className="h-[90px] sm:h-[110px] md:h-[130px] lg:h-[150px] w-auto"
-                style={{ objectFit: "contain", objectPosition: "left center" }}
+                className="skill-image"
               />
             </div>
           </div>
