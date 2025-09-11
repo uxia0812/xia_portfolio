@@ -30,11 +30,29 @@ const ProjectData = [
     description: "Global Aesthetic Information Platform",
     image: "/images/projects/prettying.png",
     tag: ["All", "PM Project"],
-    gitUrl: "https://www.figma.com/design/pzHnY2KBgokhRBDjQk0dCh/Prettying-%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84?node-id=1309-58054&t=yLI9FG55g6lpntbq-4",
+    gitUrl: "/pdf/PM_Portfolio.pdf",
     previewUrl: "https://www.prettying.me/",
   },
   {
     id: 4,
+    title: "EasyMedi Landing Page",
+    description: "Landing page introducing the service to agents",
+    image: "/images/projects/LandingPage.png",
+    tag: ["All", "PM Project", "Dev Project"],
+    gitUrl: "/pdf/PM_Portfolio.pdf",
+    previewUrl: "https://www.easymedi.net/start",
+  },
+  {
+    id: 5,
+    title: "EasyMedi Agent Management Page",
+    description: "Agent back-office planned and developed: onboarding, lead/consultation pipeline, hospital linking, multilingual ops, and settlement dashboard.",
+    image: "/images/projects/AgentPage.png",
+    tag: ["All", "PM Project", "Dev Project"],
+    gitUrl: "/pdf/PM_Portfolio.pdf",
+    previewUrl: "https://www.easymedi.net/agent/login",
+  },
+  {
+    id: 6,
     title: "Hospital Info Page",
     description: "Admin dashboard for managing partner clinics",
     image: "/images/projects/hospital_info.png",
@@ -43,7 +61,7 @@ const ProjectData = [
     previewUrl: "https://hospital-list.vercel.app/",
   },
   {
-    id: 5,
+    id: 7,
     title: "Data Processing",
     description: "Data Processing with Python for AI",
     image: "/images/projects/solomon_ai.png",
@@ -52,14 +70,14 @@ const ProjectData = [
     previewUrl: "",
   },
   {
-    id: 6,
+    id: 8,
     title: "MBTI Bot",
     description: "A simple web-based counseling bot that provides personalized advice based on MBTI types.n",
     image: "/images/projects/mbti-bot.png",
     tag: ["All", "Dev Project"],
     gitUrl: "https://github.com/uxia99/survey-app.git",
     previewUrl: "https://mbti-bot.vercel.app/",
-  }
+  },
 ];
 
 const ProjectsSection = () => {

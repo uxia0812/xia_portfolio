@@ -40,7 +40,8 @@ const HeroSection = () => {
               </button>
             </a>
             <a
-              href="https://www.linkedin.com/in/youjeong-jang-6bb368214/"
+              href="/pdf/xia_resume.pdf"
+              download="xia_resume.pdf"
               target="_blank"
             >
               <button className="px-1 py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-2">
