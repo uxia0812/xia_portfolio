@@ -30,7 +30,7 @@ const ProjectData = [
     description: "Global Aesthetic Information Platform",
     image: "/images/projects/prettying.png",
     tag: ["All", "PM Project"],
-    gitUrl: "/pdf/PM_Portfolio.pdf",
+    gitUrl: "https://pm-portfolio-liart.vercel.app/",
     previewUrl: "https://www.prettying.me/",
   },
   {
@@ -39,7 +39,7 @@ const ProjectData = [
     description: "Landing page introducing the service to agents",
     image: "/images/projects/LandingPage.png",
     tag: ["All", "PM Project", "Dev Project"],
-    gitUrl: "/pdf/PM_Portfolio.pdf",
+    gitUrl: "https://pm-portfolio-liart.vercel.app/",
     previewUrl: "https://www.easymedi.net/start",
   },
   {
@@ -48,7 +48,7 @@ const ProjectData = [
     description: "Agent back-office planned and developed: onboarding, lead/consultation pipeline, hospital linking, multilingual ops, and settlement dashboard.",
     image: "/images/projects/AgentPage.png",
     tag: ["All", "PM Project", "Dev Project"],
-    gitUrl: "/pdf/PM_Portfolio.pdf",
+    gitUrl: "https://pm-portfolio-liart.vercel.app/",
     previewUrl: "https://www.easymedi.net/agent/login",
   },
   {
