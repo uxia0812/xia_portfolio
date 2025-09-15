@@ -99,11 +99,11 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects" className="mt-7">
-      <h2 className="text-center text-4xl font-bold text-white pt-11 mt-11 mb-8">
+    <section id="projects" className="mt-7 px-4">
+      <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold text-white pt-11 mt-11 mb-8">
         My Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      <div className="text-white flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 py-6">
         <ProjectTag
           onClick={handleTagChange}
           name="All"
@@ -120,7 +120,7 @@ const ProjectsSection = () => {
           isSelected={tag === "Dev Project"}
         />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-2 gap-6 md:gap-8">
+      <ul ref={ref} className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8 px-4">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}

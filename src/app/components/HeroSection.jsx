@@ -34,9 +34,9 @@ const HeroSection = () => {
             {"자는 동안에도 일하게 만드는 시스템을 설계하고 제작하는 주니어 PM입니다."}
           </p>
           <div>
-            <a href="https://open.kakao.com/o/s72Dtwqg" target="_blank">
+            <a href="https://pm-portfolio-liart.vercel.app/" target="_blank">
               <button className="px-6 py-2.5 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">
-                Hire Me
+                View PDF
               </button>
             </a>
             <a
